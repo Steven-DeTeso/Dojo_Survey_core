@@ -11,6 +11,11 @@
 <body>
     <div class="container contain">
         <h1>Submitted Info:</h1>
+        <p>Name: {{session['name']}}</p>
+        <p>Dojo Location: {{session['location']}}</p>
+        <p>Favorite Language: {{session['language']}}</p>
+        <p>Comments: {{session['comments']}}</p>
+        <!-- a tag here will send a request to server.py to be picked up on the /form listener -->
         <a href="/form" class="btn bg-primary">Go Back</a>
     </div>
 </body>
